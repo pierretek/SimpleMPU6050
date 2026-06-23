@@ -4,11 +4,9 @@
 A simple and lightweight library for reading values from a MPU6050 IMU
  
  ## Table of Contents
-- [SimpleMPU6050  ](#simplempu6050-)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-  - [Features](#features)
-  - [Limitations](#limitations)
+- [Overview](#overview)
+- [Features](#features)
+- [Limitations](#limitations)
 - [Usage](#usage)
   - [Brief Example](#brief-example)
   - [Configuring the MPU6050](#configuring-the-mpu6050)
@@ -26,7 +24,7 @@ A simple and lightweight library for reading values from a MPU6050 IMU
 
 
 ## Overview
-The MPU6050 is a popular 6‑DOF motion sensor that measures acceleration and angular velocity in all three dimensions. This library aims to provide a simple interface for reading these values while remaining compatible with all Arduino compatible platforms.
+The MPU6050 is a popular 6‑DOF motion sensor that measures acceleration and angular velocity in all three dimensions. This library aims to provide a simple interface for reading these values while remaining compatible with all Arduino supported platforms.
 
 ## Features 
 - Can read the **gyroscope** and **accelerometer** values in `deg/s` and `g's` respectively
@@ -229,13 +227,6 @@ double readYaw();
 > 1. The angle calculations depend on the gravity axis determined from the `.calibrate()` function, make sure you calibrate your sensor in `setup()`
 > 2. Call `.updateAngles()` in `loop()` as frequently as possible to improve the reading accuracy
 
-
-# Footnotes
-[^1]: Details for `CONFIG` register ([link](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf#page=13))  
-[^2]: Details for `SMPRT_DIV` register ([link](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf#page=12))  
-[^3]: Details for the temperature reading formula ([link](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf#page=31))
-
-
 # External Resources
 - [MPU6050 Register map and Descriptions](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf)
 - [Extensive MPU6050 Article](https://mjwhite8119.github.io/Robots/mpu6050)
@@ -243,5 +234,9 @@ double readYaw();
 
 ---
 _thanks for reading_
+
+[^1]: Details for `CONFIG` register ([link](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf#page=13))  
+[^2]: Details for `SMPRT_DIV` register ([link](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf#page=12))  
+[^3]: Details for the temperature reading formula ([link](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf#page=31))
 
 
