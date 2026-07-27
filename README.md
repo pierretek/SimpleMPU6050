@@ -1,4 +1,4 @@
-# SimpleMPU6050 &nbsp; 
+# SimpleMPU6050 &nbsp;<img  width="40" height="40" align="top" src="https://github.com/user-attachments/assets/9f9dee0f-2793-4f8d-9174-a23ef09f925c" />
 <!-- <img src="https://github.com/user-attachments/assets/f0baf001-bbd4-4cb8-9915-fd82dad5cd95" width="40" height="40" align="top" /> -->
 
 A simple and lightweight library for reading values from a MPU6050 IMU
